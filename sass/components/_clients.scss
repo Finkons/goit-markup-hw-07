@@ -9,24 +9,24 @@
   }
   
   .clients-list {
-    display: flex;
-    justify-content: space-between;
+    @include display(space-between);
   }
   
   .clients-list__link {
     cursor: pointer;
-    display: flex;
-    justify-content: center;
+    @include display(center){
     align-items: center;
     width: 170px;
     height: 92px;
     fill: #afb1b8;
     border: 1px solid #afb1b8;
     border-radius: 4px;
-  }
-  .clients-list__link:hover,
-  .clients-list__link:focus {
+    }
+    &:hover,
+  &:focus {
     fill: var(--accent-color);
     border-color: var(--accent-color);
   }
+  }
+  
   

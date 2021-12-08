@@ -5,3 +5,10 @@
     --primary-color-white: #ffffff;
     --background-gray: #2f303a;
 }
+%animation {
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@mixin display($justify-content){
+    display: flex;
+}

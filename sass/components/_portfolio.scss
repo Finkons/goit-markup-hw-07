@@ -1,11 +1,11 @@
 
 
   .portfolio-filter {
-    display: flex;
-    justify-content: center;
+    @include display(center){
     margin-top: 0;
     margin-bottom: 50px;
   }
+}
   .portfolio-gallery {
     display: flex;
     flex-wrap: wrap;
@@ -64,8 +64,7 @@
     background: rgba(33, 150, 243, 0.9);
     color: var(--primary-color-white);
     transform: translateY(100%);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @extend %animation;
     .card-link:hover & {
       transform: translateY(0);
     }

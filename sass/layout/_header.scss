@@ -18,22 +18,19 @@
   }
   
   .header-contact__link {
-    display: flex;
-    align-items: center;
+    @include display(center){
     padding-top: 32px;
-    padding-bottom: 32px;
+    padding-bottom: 32px;}
+    color: var(--title-text-color);
+    &:hover,
+    &:focus {
+    color: var(--accent-color);
+  }
   }
   .header-contact__item:nth-child(-n + 2) {
     margin-left: 50px;
   }
   
-  .header-contact__link:hover,
-  .header-contact__link:focus {
-    color: var(--accent-color);
-  }
-  .header-contact__link {
-    color: var(--title-text-color);
-  }
   .header-box {
     display: flex;
     align-items: center;

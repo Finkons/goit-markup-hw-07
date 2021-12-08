@@ -5,13 +5,13 @@
     margin-right: 30px;
   }
   .feature-img {
-    display: flex;
-    justify-content: center;
+    @include display(center){
     align-items: center;
     height: 120px;
     margin-bottom: 30px;
     background: #f5f4fa;
     border-radius: 4px;
+    }
   }
   .feature-img__icon {
     display: flex;
