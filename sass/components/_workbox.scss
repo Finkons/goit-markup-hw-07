@@ -1,15 +1,16 @@
-.work-box {
+.work-list {
     display: flex;
     margin: 0;
     padding-bottom: 94px;
-  }
-  .work-box__item:nth-child(-n + 2) {
+}
+
+.work-list__item:nth-child(-n + 2) {
     margin-right: 30px;
-  }
-  .work-box__item--image {
+}
+.work-list__item--image {
     position: relative;
-  }
-  .work-box__item--text {
+}
+.work-list__item--text {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -26,12 +27,12 @@
   
     color: #ffffff;
     background: rgba(47, 48, 58, 0.8);
-  }
-  .work-title {
+}
+.work-title {
     margin-bottom: 50px;
     font-weight: bold;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
-  }
+}

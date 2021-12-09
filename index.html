@@ -61,8 +61,8 @@
         </div>
       </section>
       <!-- feature -->
-      <section class="section container">
-        <div class="feature">
+      <section class="section">
+        <div class="feature container">
           <h2 class="visually-hidden">Особенности</h2>
           <ul class="feature">
             <li class="feature-item">
@@ -116,23 +116,23 @@
       <section class="section no-padding">
         <div class="work container">
           <h2 class="work-title">Чем мы занимаемся</h2>
-          <ul class="work-box">
-            <li class="work-box__item">
-              <div class="work-box__item--image">
+          <ul class="work-list">
+            <li class="work-list__item">
+              <div class="work-list__item--image">
                 <img src="./images/img1.jpeg" width="370" alt="десктоп" />
-                <div class="work-box__item--text"><p>Десктопные приложения</p></div>
+                <div class="work-list__item--text"><p>Десктопные приложения</p></div>
               </div>
             </li>
-            <li class="work-box__item">
-              <div class="work-box__item--image">
+            <li class="work-list__item">
+              <div class="work-list__item--image">
                 <img src="./images/img2.jpeg" width="370" alt="мобильный" />
-                <div class="work-box__item--text"><p>Мобильные приложения</p></div>
+                <div class="work-list__item--text"><p>Мобильные приложения</p></div>
               </div>
             </li>
-            <li class="work-box__item">
-              <div class="work-box__item--image">
+            <li class="work-list__item">
+              <div class="work-list__item--image">
                 <img src="./images/img3.jpeg" width="370" alt="дизайн" />
-                <div class="work-box__item--text"><p>Дизайнерские решения</p></div>
+                <div class="work-list__item--text"><p>Дизайнерские решения</p></div>
               </div>
             </li>
           </ul>
@@ -142,11 +142,11 @@
       <section class="team section">
         <div class="container">
           <h2 class="team-title">Наша команда</h2>
-          <ul class="team-box">
-            <li class="team-cards">
+          <ul class="team__list">
+            <li class="team__list-item">
               <img src="./images/img4.jpeg" width="270" height="260" alt="Product Designer" />
-              <h3 class="team-cards__title">Игорь Демьяненко</h3>
-              <p class="team-cards__paragraph">Product Designer</p>
+              <h3 class="team__list-title">Игорь Демьяненко</h3>
+              <p class="team__list-paragraph">Product Designer</p>
               <ul class="team-social">
                 <li>
                   <a class="link team-social__icon" href="">
@@ -178,10 +178,10 @@
                 </li>
               </ul>
             </li>
-            <li class="team-cards">
+            <li class="team__list-item">
               <img src="./images/img5.jpeg" width="270" height="260" alt="Frontend Developer" />
-              <h3 class="team-cards__title">Ольга Репина</h3>
-              <p class="team-cards__paragraph">Frontend Developer</p>
+              <h3 class="team__list-title">Ольга Репина</h3>
+              <p class="team__list-paragraph">Frontend Developer</p>
               <ul class="team-social">
                 <li>
                   <a class="link team-social__icon" href="">
@@ -205,7 +205,7 @@
                   </a>
                 </li>
                 <li>
-                  <a class="slink team-social__icon" href="">
+                  <a class="link team-social__icon" href="">
                     <svg width="20" height="20">
                       <use href="./images/svg/icons.svg#icon-linkedin-1"></use>
                     </svg>
@@ -213,10 +213,10 @@
                 </li>
               </ul>
             </li>
-            <li class="team-cards">
+            <li class="team__list-item">
               <img src="./images/img6.jpeg" width="270" height="260" alt="Marketing" />
-              <h3 class="team-cards__title">Николай Тарасов</h3>
-              <p class="team-cards__paragraph">Marketing</p>
+              <h3 class="team__list-title">Николай Тарасов</h3>
+              <p class="team__list-paragraph">Marketing</p>
               <ul class="team-social">
                 <li>
                   <a class="team-social__icon link" href="">
@@ -248,10 +248,10 @@
                 </li>
               </ul>
             </li>
-            <li class="team-cards">
+            <li class="team__list-item">
               <img src="./images/img7.jpeg" width="270" height="260" alt="UI Designer" />
-              <h3 class="team-cards__title">Михаил Ермаков</h3>
-              <p class="team-cards__paragraph">UI Designer</p>
+              <h3 class="team__list-title">Михаил Ермаков</h3>
+              <p class="team__list-paragraph">UI Designer</p>
               <ul class="team-social">
                 <li>
                   <a class="link team-social__icon" href="">
@@ -383,7 +383,7 @@
                 </svg>
               </a>
             </li>
-            <l ">
+            <li>
               <a class="link footer-social__list--link" href="">
                 <svg  width="20" height="20">
                   <use href="./images/svg/icons.svg#icon-linkedin-1"></use>
@@ -397,24 +397,24 @@
           <h2 class="footer-form__title">Подпишитесь на рассылку</h2>
           <form  class="footer-form__list">
               <input class="footer-form__input" type="email" name="mail" placeholder="E-mail" />
-            <button  class="footer-form__button" type="submit" class="footer-btn button">Подписаться 
+            <button  class="footer-form__button button" type="submit">Подписаться 
               <svg class="icon-btn" width="24" height="24">
                 <use href="./images/svg/icons.svg#icon-icon-send"></use>
               </svg>
             </button>
           </form>
-
+        </div>
       </section>
     </footer>
     <!-- modal -->
-    <div class="backdrop is-hidden " data-backdrop>
-      <div class="modal">
-        <button class="modal-button" data-close-modal>
-          <svg class="modal-button__icon" width="18" height="18">
-            <use href="./images/svg/icons.svg#icon-close-black"></use>
-          </svg>
-        </button>
-        <form action="#" class="modal-form js-speaker-form">
+      <div class="backdrop is-hidden " data-backdrop>
+        <div class="modal">
+          <button class="modal-button" data-close-modal>
+            <svg class="modal-button__icon" width="18" height="18">
+              <use href="./images/svg/icons.svg#icon-close-black"></use>
+            </svg>
+          </button>
+          <form action="#" class="modal-form js-speaker-form">
 
             <p class="modal-form__title">Оставьте свои данные, мы вам перезвоним</p>
 
@@ -458,10 +458,9 @@
 
             <button type="submit" class="form-button button" >Отправить</button>
 
-        </form>
-    </div>
+          </form>
+        </div>
       </div>
-    </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>

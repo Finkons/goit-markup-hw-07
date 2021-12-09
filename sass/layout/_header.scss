@@ -18,14 +18,15 @@
   }
   
   .header-contact__link {
-    @include display(center){
+    display: flex;
+    justify-content: center;
     padding-top: 32px;
-    padding-bottom: 32px;}
+    padding-bottom: 32px;
     color: var(--title-text-color);
     &:hover,
     &:focus {
     color: var(--accent-color);
-  }
+    }
   }
   .header-contact__item:nth-child(-n + 2) {
     margin-left: 50px;
