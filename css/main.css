@@ -377,17 +377,14 @@ label {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-}
-
-.header-nav__link {
   color: var(--primary-text-color);
 }
 
-.header-nav__active {
+.header-nav__link:hover, .header-nav__link:focus {
   color: var(--accent-color);
 }
 
-.header-nav__active:hover, .header-nav__active:focus {
+.header-nav__active {
   color: var(--accent-color);
 }
 
@@ -419,6 +416,8 @@ label {
 
 .header-contact__icon--mail {
   content: '';
+  display: flex;
+  align-items: center;
   margin-right: 10px;
   fill: currentColor;
 }
@@ -431,6 +430,7 @@ label {
 
 .header-contact__link {
   display: flex;
+  align-items: center;
   justify-content: center;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -439,6 +439,10 @@ label {
 
 .header-contact__link:hover, .header-contact__link:focus {
   color: var(--accent-color);
+}
+
+.header-contact__item {
+  display: flex;
 }
 
 .header-contact__item:nth-child(-n + 2) {

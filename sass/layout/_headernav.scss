@@ -23,16 +23,15 @@
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
-  }
-  .header-nav__link {
     color: var(--primary-text-color);
+    &:hover,
+    &:focus {
+    color: var(--accent-color);
   }
+  }
+  
   .header-nav__active {
     color: var(--accent-color);
-    &:hover,
-  &:focus {
-    color: var(--accent-color);
-  }
   }
   
   .header-nav__active {

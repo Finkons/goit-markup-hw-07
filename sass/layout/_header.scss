@@ -8,6 +8,8 @@
   }
   .header-contact__icon--mail {
     content: '';
+    display: flex;
+    align-items: center;
     margin-right: 10px;
     fill: currentColor;
   }
@@ -19,6 +21,7 @@
   
   .header-contact__link {
     display: flex;
+    align-items: center;
     justify-content: center;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -28,9 +31,12 @@
     color: var(--accent-color);
     }
   }
-  .header-contact__item:nth-child(-n + 2) {
+  .header-contact__item{
+  display: flex;
+  &:nth-child(-n + 2) {
     margin-left: 50px;
   }
+}
   
   .header-box {
     display: flex;
